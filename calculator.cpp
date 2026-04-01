@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip> // for std::setprecision()
 #include "getFunction.h"
 #include "getNumber.h"
 
@@ -53,6 +54,7 @@ int main(){
             std::cout<<"Unknown operator \n";
             return 1;
         }
+    std::setprecision(15);
     std::cout<<"Result: "<<num1<<operand<<num2<<"="<<result<<'\n';
     return 0;
 }
